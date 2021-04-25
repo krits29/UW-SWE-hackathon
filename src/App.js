@@ -1,30 +1,22 @@
-import React, { Component } from 'react';
-import './App.css';
-import UserInput from './UserInput/UserInput.js';
-import UserOutput from './UserOutput/UserOutput.js';
+import "./styles.css";
+import React, { Component } from "react";
+import { BrowserRouter } from "react-router-dom";
+import { Route } from "react-router-dom";
+import home from "./home.js";
+import results from "./results.js";
+import input from "./input.js";
+import "./phone.html";
 
 class App extends Component {
-  state = {username: "k29"} //silly bug here
-
-  usernameChangeHandler = (event) => {
-    this.setState({username: event.target.value}); 
-    //event.targer.value is input element which has a value property that the user enter
-    //update the state and will inform react if the state changed
-    //pass it as props as the useroutput and checks child elements
-    //if props changes, it will re-render the <p>Usernamepart
-  }
-
   render() {
     return (
-      <div className="App">
-        <h1>Assignment 1</h1>
-        <UserInput 
-          changed = {this.usernameChangeHandler} 
-          currentName = {this.state.username}
-        />
-        <UserOutput username = {this.state.username}/>
-        <UserOutput username = "w56"/>
-      </div>
+      <BrowserRouter>
+        <div>
+          <Route path="/" exact component={home} />
+          <Route path="/results" exact component={results} />
+          <Route path="/input" exact component={input} />
+        </div>
+      </BrowserRouter>
     );
   }
 }
