@@ -1,0 +1,59 @@
+.App {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.oval {
+  text-align: center;
+  color: white;
+  padding: 35px;
+  margin: 30px;
+  width: 180px;
+  height: 450px;
+  background: #846f95ff;
+  border-radius: 50px / 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 7px black double;
+}
+
+.btn {
+  padding: 7px;
+  background-color: lavender;
+  color: #846f95ff;
+  border-radius: 20px;
+  border-color: white;
+  font-size: 1.05em;
+}
+
+.btn:hover{
+  background-color: #B4A9C4;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.corner {
+  text-align: left;
+  margin: 20px;
+}
+
+
+#mapid { height: 180px; }
+
+.textbox{
+  margin-left:auto;
+  width: 8em;
+  margin-right:auto;
+}
+
+.box{
+  textAlign: 'left';
+}
