@@ -1,6 +1,7 @@
 import "./styles.css";
 import React, { Component } from "react";
 import { BrowserRouter } from "react-router-dom";
+import SimpleMap from "./maps.js"
 import { Route } from "react-router-dom";
 import home from "./home.js";
 import results from "./results.js";
@@ -15,6 +16,7 @@ class App extends Component {
           <Route path="/" exact component={home} />
           <Route path="/results" exact component={results} />
           <Route path="/input" exact component={input} />
+          <Route path="/maps" exact component={SimpleMap} />
         </div>
       </BrowserRouter>
     );
